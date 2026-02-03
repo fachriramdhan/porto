@@ -3,21 +3,13 @@
     "builds": [
         {
             "src": "api/index.php",
-            "use": "vercel-php@0.6.0"
-        },
-        {
-            "src": "public/**",
-            "use": "@vercel/static"
+            "use": "vercel-php@0.7.2"
         }
     ],
     "routes": [
         {
-            "src": "/(css|js|img)/(.*)",
+            "src": "/(css|js|build|img|data)/(.*)",
             "dest": "public/$1/$2"
-        },
-        {
-            "src": "/build/(.*)",
-            "dest": "public/build/$1"
         },
         {
             "src": "/(.*)",
@@ -27,9 +19,15 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://your-domain.vercel.app",
-        "APP_KEY": "your-app-key-here",
+        "APP_KEY": "base64:1DuxFRnNMBZtbxXVXpmrZDJ3rMQYXXR3nH1nJGkq7HI=",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie"
+        "SESSION_DRIVER": "cookie",
+        "VIEW_COMPILED_PATH": "/tmp/views",
+        "CACHE_DRIVER": "array"
+    },
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.7.2"
+        }
     }
 }
