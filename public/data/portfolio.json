@@ -1,0 +1,156 @@
+{
+    "profile": {
+        "name": "Fachri Ramdhan",
+        "title": "IoT Engineer & Software Engineer",
+        "description": "Passionate about building scalable web applications and solving complex problems with clean, efficient code. Specialized in full-stack development with modern technologies.",
+        "education": "S1 Teknologi Informasi",
+        "location": "Jakarta, Indonesia",
+        "status": "Available for Hire",
+        "email": "fachriramdhan04@gmail.com",
+        "cv_url": "cv.pdf",
+        "profile_image": "img/profile.jpeg"
+    },
+    "social_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/fachriramdhan",
+            "icon": "fab fa-github",
+            "color": "#2563eb"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://instagram.com/fachriramdhano",
+            "icon": "fab fa-instagram",
+            "color": "#ec4899"
+        },
+        {
+            "name": "Medium",
+            "url": "https://medium.com/@fachriramdhan",
+            "icon": "fab fa-medium",
+            "color": "#10b981"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/R4mdhana",
+            "icon": "fab fa-x-twitter",
+            "color": "#38bdf8"
+        },
+        {
+            "name": "TikTok",
+            "url": "https://tiktok.com/@fachriramdhan",
+            "icon": "fab fa-tiktok",
+            "color": "#22d3ee"
+        }
+    ],
+    "contact_links": [
+        {
+            "name": "Email Me",
+            "url": "mailto:fachriramdhan04@gmail.com",
+            "icon": "fas fa-envelope",
+            "bg_color": "red-100",
+            "icon_color": "red-600",
+            "hover_color": "red-500"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://linkedin.com/in/fachriramdhan",
+            "icon": "fab fa-linkedin-in",
+            "bg_color": "blue-100",
+            "icon_color": "[#0077b5]",
+            "hover_color": "blue-500"
+        }
+    ],
+    "work_experience": [
+        {
+            "company": "PT. Mattel Indonesia",
+            "position": "IoT Technician System",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mattel_%282019%29.svg/960px-Mattel_%282019%29.svg.png"
+        },
+        {
+            "company": "PT. Brothersindo Saudara S",
+            "position": "HR Administration",
+            "logo": "https://brothersindo.co.id/v6/upin-ipin.png"
+        },
+        {
+            "company": "PT. Delta Tekno Perkasa",
+            "position": "Staff IT & Admin Operasional",
+            "logo": "https://deltatekno.co.id/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-26-at-08.38.16-1024x1024-transformed.png"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Cattle Eye Disease Detection",
+            "description": "Real-time AI system to detect bovine pink eye using YOLOv4.",
+            "technologies": ["Python", "YOLOv4", "Flask", "TailwindCSS"],
+            "github_url": "https://github.com/fachriramdhan/BovineEye-YOLOv4-Flask"
+        },
+        {
+            "title": "DMS Approval Workflow",
+            "description": "Document management system with secure approval workflow and RBAC.",
+            "technologies": ["React", "TailwindCSS", "MySQL"],
+            "github_url": "https://github.com/fachriramdhan/DMS-Approval-Workflow---React"
+        },
+        {
+            "title": "AgriLivestock Management System",
+            "description": "Cattle farm management system for livestock, production, and health records.",
+            "technologies": ["PHP", "MySQL", "TailwindCSS"],
+            "github_url": "https://github.com/fachriramdhan/AgriLivestock-Web-Management-System"
+        },
+        {
+            "title": "Stock Management System",
+            "description": "Inventory system with real-time stock tracking and analytics dashboard.",
+            "technologies": ["ASP.NET 8", "TailwindCSS", "MySQL"],
+            "github_url": "https://github.com/fachriramdhan/stock-management-system---StokApp"
+        },
+        {
+            "title": "Digital PTW System",
+            "description": "Digital permit-to-work system with multi-level approval and safety tracking.",
+            "technologies": ["ASP.NET Core 8", "TailwindCSS", "SQL Server"],
+            "github_url": "https://github.com/fachriramdhan/PTW-backup"
+        },
+        {
+            "title": "Enterprise Operations Dashboard",
+            "description": "Internal enterprise dashboard for KPIs, attendance, and operational monitoring.",
+            "technologies": ["ASP.NET Core 8", "TailwindCSS", "MySQL"],
+            "github_url": "https://github.com/fachriramdhan/Enterprise-Internal-Dashboard---Performance-Operations-System"
+        }
+    ],
+    "tech_stack": {
+        "frontend": [
+            { "name": "HTML", "icon": "img/html.webp" },
+            { "name": "CSS", "icon": "img/css.png" },
+            { "name": "JavaScript", "icon": "img/js.png" },
+            { "name": "ReactJS", "icon": "img/reactjs.png" }
+        ],
+        "backend": [
+            { "name": "Python", "icon": "img/py.png" },
+            { "name": "Django", "icon": "img/django.png" },
+            { "name": "Flask", "icon": "img/flask.webp", "dark_invert": true },
+            { "name": "Laravel", "icon": "img/laravel.png" },
+            { "name": "ASP.NET", "icon": "img/aspnet.png" },
+            { "name": "C#", "icon": "img/csharp.png" }
+        ],
+        "database": [
+            { "name": "MySQL", "icon": "img/mysql.png" },
+            { "name": "SQL Server", "icon": "img/sqlserver.png" },
+            { "name": "PostgreSQL", "icon": "img/postgresql.png" }
+        ],
+        "tools": [
+            { "name": "Docker", "icon": "img/docker.png" },
+            { "name": "Kubernetes", "icon": "img/kubernetes.png" },
+            { "name": "Git", "icon": "img/git.png" },
+            { "name": "GitHub", "icon": "img/github.png", "dark_invert": true }
+        ],
+        "iot": [
+            { "name": "Arduino", "icon": "img/arduino.png" },
+            { "name": "Raspberry Pi", "icon": "img/pi.webp" },
+            { "name": "Indusoft", "icon": "img/indusoftws.webp" },
+            {
+                "name": "RootCloud",
+                "icon": "img/rootcloud.png",
+                "dark_invert": true
+            },
+            { "name": "MQTT", "icon": "img/mqtt.png" }
+        ]
+    }
+}

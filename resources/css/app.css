@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    transition: background 0.5s ease;
+    background-attachment: fixed;
+}
+
+/* Gradient Mode Gelap */
+.dark body {
+    background: radial-gradient(
+        circle at top left,
+        #2d1b33 0%,
+        #11131f 40%,
+        #000000 100%
+    );
+}
+
+/* Gradient Mode Terang */
+html:not(.dark) body {
+    background: radial-gradient(
+        circle at top left,
+        #e0e7ff 0%,
+        #f1f5f9 40%,
+        #ffffff 100%
+    );
+}
+
+.glass-card {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+}
+
+/* Custom Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.card-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-hover:hover {
+    transform: translateY(-8px);
+}
+
+.tech-badge {
+    font-size: 10px;
+    padding: 4px 10px;
+    background: rgba(16, 185, 129, 0.1);
+    color: rgb(16, 185, 129);
+    border-radius: 8px;
+    font-weight: 600;
+}
