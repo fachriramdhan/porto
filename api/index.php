@@ -1,7 +1,14 @@
-cat > api/index.php << 'EOF' <?php
+<?php
+
+// Define base path
+define('LARAVEL_START', microtime(true));
 
 // Load Composer autoloader
-require __DIR__ . '/../vendor/autoload.php';
+if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    require __DIR__ . '/../vendor/autoload.php';
+} else {
+    die('Vendor autoload not found. Run composer install.');
+}
 
 // Bootstrap Laravel
 $app = require_once __DIR__ . '/../bootstrap/app.php';
