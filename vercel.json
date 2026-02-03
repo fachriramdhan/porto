@@ -1,17 +1,13 @@
 {
     "version": 2,
-    "outputDirectory": "public",
-    "buildCommand": "composer install --no-dev --optimize-autoloader",
     "functions": {
-        "api/*.php": {
-            "runtime": "vercel-php@0.7.2"
+        "api/index.php": {
+            "runtime": "vercel-php@0.7.2",
+            "memory": 1024,
+            "maxDuration": 10
         }
     },
     "routes": [
-        {
-            "src": "/(css|js|build|img|data)/(.*)",
-            "dest": "public/$1/$2"
-        },
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
@@ -23,8 +19,10 @@
         "APP_KEY": "base64:1DuxFRnNMBZtbxXVXpmrZDJ3rMQYXXR3nH1nJGkq7HI=",
         "APP_URL": "https://fachriramdhan.vercel.app",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie",
-        "VIEW_COMPILED_PATH": "/tmp/views",
-        "CACHE_DRIVER": "array"
+        "SESSION_DRIVER": "array",
+        "VIEW_COMPILED_PATH": "/tmp",
+        "CACHE_DRIVER": "array",
+        "APP_LOCALE": "en",
+        "APP_FALLBACK_LOCALE": "en"
     }
 }
